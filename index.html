@@ -1,4 +1,207 @@
-<!-- 🔥 SEULEMENT LE CONTENU MODIFIÉ (garde ton CSS identique) -->
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Trouvé — Politique de confidentialité</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=DM+Serif+Display&display=swap');
+
+  :root {
+    --brand: rgb(18, 69, 125);
+    --brand-light: rgba(18, 69, 125, 0.08);
+    --brand-mid: rgba(18, 69, 125, 0.15);
+    --text: #1C1C1E;
+    --muted: #6C6C70;
+    --bg: #F2F2F7;
+    --card: #fff;
+    --border: rgba(0,0,0,0.08);
+  }
+
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+
+  body {
+    font-family: 'DM Sans', sans-serif;
+    background: var(--bg);
+    color: var(--text);
+    line-height: 1.7;
+  }
+
+  header {
+    background: var(--brand);
+    padding: 32px 24px 28px;
+    text-align: center;
+  }
+
+  .logo {
+    font-family: 'DM Serif Display', serif;
+    font-size: 42px;
+    color: #fff;
+    letter-spacing: -1px;
+  }
+
+  .logo-sub {
+    font-size: 13px;
+    color: rgba(255,255,255,0.7);
+    margin-top: 4px;
+    letter-spacing: 0.5px;
+  }
+
+  .lang-switcher {
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+    padding: 16px 24px;
+    background: var(--brand);
+    border-top: 1px solid rgba(255,255,255,0.1);
+  }
+
+  .lang-btn {
+    padding: 6px 16px;
+    border-radius: 20px;
+    border: 1.5px solid rgba(255,255,255,0.3);
+    color: rgba(255,255,255,0.7);
+    font-size: 13px;
+    font-weight: 500;
+    cursor: pointer;
+    background: transparent;
+    font-family: 'DM Sans', sans-serif;
+    transition: all 0.2s;
+  }
+
+  .lang-btn.active {
+    background: #fff;
+    color: var(--brand);
+    border-color: #fff;
+    font-weight: 600;
+  }
+
+  .content {
+    max-width: 680px;
+    margin: 0 auto;
+    padding: 32px 20px 60px;
+  }
+
+  .updated {
+    font-size: 12px;
+    color: var(--muted);
+    text-align: center;
+    margin-bottom: 24px;
+  }
+
+  .section {
+    background: var(--card);
+    border-radius: 16px;
+    padding: 20px 20px;
+    margin-bottom: 12px;
+    border: 0.5px solid var(--border);
+  }
+
+  .section-header {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 12px;
+  }
+
+  .section-icon {
+    width: 36px;
+    height: 36px;
+    border-radius: 10px;
+    background: var(--brand-light);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+    flex-shrink: 0;
+  }
+
+  .section-title {
+    font-size: 15px;
+    font-weight: 600;
+    color: var(--brand);
+  }
+
+  .section p {
+    font-size: 14px;
+    color: var(--muted);
+    line-height: 1.6;
+  }
+
+  .section ul {
+    list-style: none;
+    margin-top: 8px;
+  }
+
+  .section ul li {
+    font-size: 14px;
+    color: var(--muted);
+    padding: 4px 0;
+    padding-left: 16px;
+    position: relative;
+  }
+
+  .section ul li::before {
+    content: '·';
+    position: absolute;
+    left: 0;
+    color: var(--brand);
+    font-weight: 700;
+  }
+
+  .highlight {
+    background: var(--brand-light);
+    border-radius: 10px;
+    padding: 12px 14px;
+    margin-top: 10px;
+    font-size: 13px;
+    color: var(--brand);
+    font-weight: 500;
+    border: 1px solid var(--brand-mid);
+  }
+
+  .contact-card {
+    background: var(--brand);
+    border-radius: 16px;
+    padding: 20px;
+    text-align: center;
+    margin-top: 16px;
+  }
+
+  .contact-card p {
+    color: rgba(255,255,255,0.8) !important;
+    font-size: 14px;
+  }
+
+  .contact-card a {
+    color: #fff;
+    font-weight: 600;
+    text-decoration: none;
+  }
+
+  .lang-content { display: none; }
+  .lang-content.active { display: block; }
+
+  footer {
+    text-align: center;
+    padding: 20px;
+    font-size: 12px;
+    color: var(--muted);
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <div class="logo">Trouvé</div>
+  <div class="logo-sub">Politique de confidentialité · Privacy Policy · Política de privacidad</div>
+</header>
+
+<div class="lang-switcher">
+  <button class="lang-btn active" onclick="setLang('fr', event)">Français</button>
+  <button class="lang-btn" onclick="setLang('en', event)">English</button>
+  <button class="lang-btn" onclick="setLang('es', event)">Español</button>
+</div>
 
 <!-- FRANÇAIS -->
 <div class="lang-content active" id="lang-fr">
@@ -10,24 +213,21 @@
       <div class="section-icon">🔒</div>
       <div class="section-title">Principe fondamental</div>
     </div>
-    <p><strong>Vos documents restent stockés localement sur votre appareil.</strong></p>
-    <p>Les fichiers originaux (PDF, images) ne sont jamais envoyés à nos serveurs.</p>
-    <div class="highlight">
-      Certaines fonctionnalités nécessitent le traitement du texte extrait via un service d’intelligence artificielle sécurisé (Anthropic — Claude) afin de permettre la recherche, l’indexation et l’analyse.
-    </div>
+    <p>Trouvé est conçu pour respecter votre vie privée. <strong>Vos documents originaux (PDF, images) restent stockés localement sur votre appareil.</strong> Les fichiers originaux ne sont pas envoyés à nos serveurs.</p>
+    <div class="highlight">✓ Vos fichiers restent sur votre appareil — certaines fonctionnalités peuvent utiliser du texte extrait pour permettre la recherche, l’indexation et l’analyse.</div>
   </div>
 
   <div class="section">
     <div class="section-header">
       <div class="section-icon">📄</div>
-      <div class="section-title">Données traitées</div>
+      <div class="section-title">Données collectées</div>
     </div>
+    <p>Trouvé traite uniquement les données nécessaires au fonctionnement de l'app :</p>
     <ul>
-      <li><strong>Texte extrait</strong> — envoyé temporairement à Claude pour indexation et recherche</li>
-      <li><strong>Documents</strong> — stockés uniquement sur votre appareil</li>
-      <li><strong>Audio vocal</strong> — traité localement sur votre appareil</li>
-      <li><strong>Identifiant appareil</strong> — identifiant anonyme pour sécuriser les requêtes</li>
-      <li><strong>Données d’abonnement</strong> — gérées par RevenueCat et Apple/Google</li>
+      <li><strong>Contenu des documents</strong> — le texte extrait de vos PDFs et images scannées peut être envoyé à l'API Claude (Anthropic) pour l'indexation, la recherche, la catégorisation et certaines analyses intelligentes. Les fichiers originaux (PDF, images) ne sont jamais transmis.</li>
+      <li><strong>Audio vocal</strong> — lorsque vous utilisez la recherche vocale, votre voix est traitée localement sur votre appareil.</li>
+      <li><strong>Identifiant appareil</strong> — un identifiant anonyme est utilisé pour authentifier vos requêtes à l'API. Il n'est pas lié à votre identité.</li>
+      <li><strong>Données d'abonnement</strong> — gérées par RevenueCat et Apple/Google selon leurs propres politiques.</li>
     </ul>
   </div>
 
@@ -37,11 +237,20 @@
       <div class="section-title">Permissions utilisées</div>
     </div>
     <ul>
-      <li>Caméra — scanner des documents</li>
-      <li>Microphone — recherche vocale</li>
-      <li>Fichiers / Photos — importer vos documents</li>
-      <li>Notifications — rappels (optionnel)</li>
+      <li><strong>Caméra</strong> — uniquement pour scanner des documents papier</li>
+      <li><strong>Microphone</strong> — uniquement pour la recherche vocale</li>
+      <li><strong>Fichiers / Photos</strong> — pour importer vos PDFs et images</li>
+      <li><strong>Notifications</strong> — pour les rappels intelligents (optionnel)</li>
     </ul>
+    <p style="margin-top:10px">Aucune permission n'est utilisée à d'autres fins.</p>
+  </div>
+
+  <div class="section">
+    <div class="section-header">
+      <div class="section-icon">🔔</div>
+      <div class="section-title">Rappels intelligents</div>
+    </div>
+    <p>Trouvé peut analyser le contenu de vos documents pour détecter des dates importantes (rendez-vous, échéances, factures) et vous envoyer des rappels. Les notifications sont générées sur votre appareil. Selon la fonctionnalité utilisée, du texte extrait peut être traité pour identifier certaines informations utiles.</p>
   </div>
 
   <div class="section">
@@ -50,19 +259,194 @@
       <div class="section-title">Services tiers</div>
     </div>
     <ul>
-      <li>Anthropic (Claude API) — traitement du texte</li>
-      <li>RevenueCat — gestion des abonnements</li>
-      <li>Apple / Google — paiement et distribution</li>
+      <li><strong>Anthropic (Claude API)</strong> — traitement du texte extrait pour l'indexation, la recherche et certaines fonctionnalités intelligentes</li>
+      <li><strong>RevenueCat</strong> — gestion des abonnements</li>
+      <li><strong>Apple / Google</strong> — distribution et paiements</li>
     </ul>
-    <p style="margin-top:10px">Nous ne vendons ni ne partageons vos données à des fins publicitaires.</p>
+    <p style="margin-top:10px">Nous ne vendons, ne louons ni ne partageons vos données avec des annonceurs. Nous ne conservons aucune copie de vos documents originaux sur nos serveurs.</p>
   </div>
 
   <div class="section">
     <div class="section-header">
       <div class="section-icon">💾</div>
-      <div class="section-title">Stockage et suppression</div>
+      <div class="section-title">Sauvegarde et suppression</div>
     </div>
-    <p>Vos documents restent sur votre appareil. Si vous supprimez l’app, toutes les données locales sont supprimées.</p>
+    <p>Vos documents sont stockés localement sur votre appareil. La sauvegarde automatique via iCloud (iOS) ou Google Drive (Android) peut être activée selon vos réglages système. Si vous désinstallez l'app, toutes les données locales sont supprimées.</p>
   </div>
 
-  <div
+  <div class="contact-card">
+    <p>Des questions sur votre vie privée ?</p>
+    <p style="margin-top:8px"><a href="mailto:trouve.app@gmail.com">trouve.app@gmail.com</a></p>
+  </div>
+</div>
+</div>
+
+<!-- ENGLISH -->
+<div class="lang-content" id="lang-en">
+<div class="content">
+  <p class="updated">Last updated: April 2026</p>
+
+  <div class="section">
+    <div class="section-header">
+      <div class="section-icon">🔒</div>
+      <div class="section-title">Core principle</div>
+    </div>
+    <p>Trouvé is designed to respect your privacy. <strong>Your original documents (PDFs, images) remain stored locally on your device.</strong> Original files are not sent to our servers.</p>
+    <div class="highlight">✓ Your files stay on your device — some features may use extracted text to enable search, indexing, and analysis.</div>
+  </div>
+
+  <div class="section">
+    <div class="section-header">
+      <div class="section-icon">📄</div>
+      <div class="section-title">Data collected</div>
+    </div>
+    <p>Trouvé only processes the data necessary for the app to function:</p>
+    <ul>
+      <li><strong>Document content</strong> — text extracted from your PDFs and scanned images may be sent to the Claude API (Anthropic) for indexing, search, categorization, and certain intelligent features. Original files (PDFs, images) are never transmitted.</li>
+      <li><strong>Voice audio</strong> — when using voice search, your voice is processed locally on your device.</li>
+      <li><strong>Device identifier</strong> — an anonymous identifier is used to authenticate your API requests. It is not linked to your identity.</li>
+      <li><strong>Subscription data</strong> — managed by RevenueCat and Apple/Google under their own policies.</li>
+    </ul>
+  </div>
+
+  <div class="section">
+    <div class="section-header">
+      <div class="section-icon">📷</div>
+      <div class="section-title">Permissions used</div>
+    </div>
+    <ul>
+      <li><strong>Camera</strong> — only to scan paper documents</li>
+      <li><strong>Microphone</strong> — only for voice search</li>
+      <li><strong>Files / Photos</strong> — to import your PDFs and images</li>
+      <li><strong>Notifications</strong> — for smart reminders (optional)</li>
+    </ul>
+    <p style="margin-top:10px">No permission is used for any other purpose.</p>
+  </div>
+
+  <div class="section">
+    <div class="section-header">
+      <div class="section-icon">🔔</div>
+      <div class="section-title">Smart reminders</div>
+    </div>
+    <p>Trouvé can analyze the content of your documents to detect important dates (appointments, deadlines, bills) and send you reminders. Notifications are generated on your device. Depending on the feature used, extracted text may be processed to identify useful information.</p>
+  </div>
+
+  <div class="section">
+    <div class="section-header">
+      <div class="section-icon">🤝</div>
+      <div class="section-title">Third-party services</div>
+    </div>
+    <ul>
+      <li><strong>Anthropic (Claude API)</strong> — processing extracted text for indexing, search, and certain intelligent features</li>
+      <li><strong>RevenueCat</strong> — subscription management</li>
+      <li><strong>Apple / Google</strong> — distribution and payments</li>
+    </ul>
+    <p style="margin-top:10px">We do not sell, rent, or share your data with advertisers. We do not keep copies of your original documents on our servers.</p>
+  </div>
+
+  <div class="section">
+    <div class="section-header">
+      <div class="section-icon">💾</div>
+      <div class="section-title">Backup and deletion</div>
+    </div>
+    <p>Your documents are stored locally on your device. Automatic backup via iCloud (iOS) or Google Drive (Android) may be enabled depending on your system settings. If you uninstall the app, all local data is deleted.</p>
+  </div>
+
+  <div class="contact-card">
+    <p>Questions about your privacy?</p>
+    <p style="margin-top:8px"><a href="mailto:trouve.app@gmail.com">trouve.app@gmail.com</a></p>
+  </div>
+</div>
+</div>
+
+<!-- ESPAÑOL -->
+<div class="lang-content" id="lang-es">
+<div class="content">
+  <p class="updated">Última actualización: abril 2026</p>
+
+  <div class="section">
+    <div class="section-header">
+      <div class="section-icon">🔒</div>
+      <div class="section-title">Principio fundamental</div>
+    </div>
+    <p>Trouvé está diseñado para respetar tu privacidad. <strong>Tus documentos originales (PDF, imágenes) permanecen almacenados localmente en tu dispositivo.</strong> Los archivos originales no se envían a nuestros servidores.</p>
+    <div class="highlight">✓ Tus archivos permanecen en tu dispositivo — algunas funciones pueden usar texto extraído para permitir la búsqueda, indexación y análisis.</div>
+  </div>
+
+  <div class="section">
+    <div class="section-header">
+      <div class="section-icon">📄</div>
+      <div class="section-title">Datos recopilados</div>
+    </div>
+    <p>Trouvé solo procesa los datos necesarios para el funcionamiento de la app:</p>
+    <ul>
+      <li><strong>Contenido de documentos</strong> — el texto extraído de tus PDFs e imágenes escaneadas puede enviarse a la API Claude (Anthropic) para indexación, búsqueda, categorización y ciertas funciones inteligentes. Los archivos originales (PDFs, imágenes) nunca se transmiten.</li>
+      <li><strong>Audio de voz</strong> — cuando usas la búsqueda por voz, tu voz se procesa localmente en tu dispositivo.</li>
+      <li><strong>Identificador de dispositivo</strong> — se usa un identificador anónimo para autenticar tus solicitudes a la API. No está vinculado a tu identidad.</li>
+      <li><strong>Datos de suscripción</strong> — gestionados por RevenueCat y Apple/Google según sus propias políticas.</li>
+    </ul>
+  </div>
+
+  <div class="section">
+    <div class="section-header">
+      <div class="section-icon">📷</div>
+      <div class="section-title">Permisos utilizados</div>
+    </div>
+    <ul>
+      <li><strong>Cámara</strong> — solo para escanear documentos en papel</li>
+      <li><strong>Micrófono</strong> — solo para la búsqueda por voz</li>
+      <li><strong>Archivos / Fotos</strong> — para importar tus PDFs e imágenes</li>
+      <li><strong>Notificaciones</strong> — para recordatorios inteligentes (opcional)</li>
+    </ul>
+    <p style="margin-top:10px">Ningún permiso se usa para otros fines.</p>
+  </div>
+
+  <div class="section">
+    <div class="section-header">
+      <div class="section-icon">🔔</div>
+      <div class="section-title">Recordatorios inteligentes</div>
+    </div>
+    <p>Trouvé puede analizar el contenido de tus documentos para detectar fechas importantes (citas, plazos, facturas) y enviarte recordatorios. Las notificaciones se generan en tu dispositivo. Según la función utilizada, el texto extraído puede procesarse para identificar información útil.</p>
+  </div>
+
+  <div class="section">
+    <div class="section-header">
+      <div class="section-icon">🤝</div>
+      <div class="section-title">Servicios de terceros</div>
+    </div>
+    <ul>
+      <li><strong>Anthropic (Claude API)</strong> — procesamiento del texto extraído para indexación, búsqueda y ciertas funciones inteligentes</li>
+      <li><strong>RevenueCat</strong> — gestión de suscripciones</li>
+      <li><strong>Apple / Google</strong> — distribución y pagos</li>
+    </ul>
+    <p style="margin-top:10px">No vendemos, alquilamos ni compartimos tus datos con anunciantes. No conservamos copias de tus documentos originales en nuestros servidores.</p>
+  </div>
+
+  <div class="section">
+    <div class="section-header">
+      <div class="section-icon">💾</div>
+      <div class="section-title">Copia de seguridad y eliminación</div>
+    </div>
+    <p>Tus documentos se almacenan localmente en tu dispositivo. La copia de seguridad automática a través de iCloud (iOS) o Google Drive (Android) puede estar activada según la configuración de tu sistema. Si desinstalas la app, todos los datos locales se eliminan.</p>
+  </div>
+
+  <div class="contact-card">
+    <p>¿Preguntas sobre tu privacidad?</p>
+    <p style="margin-top:8px"><a href="mailto:trouve.app@gmail.com">trouve.app@gmail.com</a></p>
+  </div>
+</div>
+</div>
+
+<footer>© 2026 Halexen · Trouvé App</footer>
+
+<script>
+function setLang(lang, event) {
+  document.querySelectorAll('.lang-content').forEach(el => el.classList.remove('active'));
+  document.querySelectorAll('.lang-btn').forEach(el => el.classList.remove('active'));
+  document.getElementById('lang-' + lang).classList.add('active');
+  event.target.classList.add('active');
+  document.documentElement.lang = lang;
+}
+</script>
+</body>
+</html>
